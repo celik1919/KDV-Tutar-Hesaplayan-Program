@@ -10,10 +10,10 @@ public class Main {
 
         kdvTutar = tutar>1000 ? tutar * kdvOran2 : tutar * kdvOran1;
         kdvliTutar = tutar + kdvTutar;
-        oran = tutar<1000 ? kdvOran1 : kdvOran2;
+        oran = tutar<1000 ? kdvOran2 : kdvOran1;
         
         System.out.println("KDV'siz Tutar: " + tutar);
-        System.out.print("KDV Oranı: " + oran);
+        System.out.println("KDV Oranı: " + oran);
         System.out.println("KDV Tutarı: " + kdvTutar);
         System.out.println("KDV'li Tutar: " + kdvliTutar);
     }
